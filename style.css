@@ -227,6 +227,7 @@ a:hover {
 /* SECTIONS */
 
 section {
+  flex-wrap: wrap;
   padding-top: 4vh;
   height: 96vh;
   margin: 0 10rem;
@@ -407,10 +408,22 @@ section {
 
 .experience-details-container {
   display: flex;
-  justify-content: center;
-  flex-direction: column;
-}
+  flex-wrap: wrap;
+  justify-content: space-between;
+  /* display: flex;
 
+  justify-content: center; 
+  flex-direction: column; */
+}
+.details-container {
+  flex: 1 1 calc(50% - 10px); /* 50% width minus some spacing */
+  margin-bottom: 20px; /* Space between rows */
+}
+.about-containers {
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 0 20px;
+}
 .article-container {
   display: flex;
   text-align: initial;

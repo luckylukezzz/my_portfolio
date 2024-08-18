@@ -1,3 +1,18 @@
+/* For screens between 768px and 1279px */
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .details-container {
+    flex: 1 1 calc(50% - 10px); /* 2 per row */
+  }
+}
+
+/* For screens 1280px and above */
+@media screen and (min-width: 1280px) {
+  .details-container {
+    flex: 1 1 calc(25% - 10px); /* 4 per row */
+  }
+}
+
+/* For screens up to 1400px */
 @media screen and (max-width: 1400px) {
   #profile {
     height: 83vh;
@@ -12,6 +27,7 @@
   }
 }
 
+/* For screens up to 1200px */
 @media screen and (max-width: 1200px) {
   #desktop-nav {
     display: none;
@@ -47,6 +63,7 @@
   }
 }
 
+/* For screens up to 600px */
 @media screen and (max-width: 600px) {
   #contact,
   footer {
