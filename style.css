@@ -74,6 +74,14 @@ a,
 .btn {
   transition: all 300ms ease;
 }
+.btn-disabled {
+  background-color: #cccccc; /* Grey background */
+  color: #666666; /* Grey text */
+  cursor: not-allowed; /* Shows a not-allowed cursor */
+  pointer-events: none; /* Disables clicking */
+  opacity: 0.6; /* Makes the button appear slightly transparent */
+}
+
 
 /* DESKTOP NAV */
 
