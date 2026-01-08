@@ -45,9 +45,9 @@
     <div class="section__text">
       <p class="section__text__p1">Hello, I'm</p>
       <h1 class="title">Patalee Narasinghe</h1>
-      <p class="section__text__p2">Data Science Engineering Student</p>
+      <p class="section__text__p2">AI & Cloud Engineering Enthusiast</p>
       <div class="btn-container">
-        <button class="btn btn-color-2" onclick="window.open('./assets/Curriculum-vitae.pdf')">
+        <button class="btn btn-color-2" onclick="window.open('./assets/cv_210407R_compressed.pdf')">
           Download CV
         </button>
         <button class="btn btn-color-1" onclick="location.href='./#contact'">
@@ -106,6 +106,28 @@
     <h1 class="title">Experience</h1>
     <div class="experience-details-container">
       <div class="about-containers">
+        <div class="details-container">
+          <h2 class="experience-sub-title">Professional Experience</h2>
+          <div class="article-container" style="display:block; text-align:left; padding: 0 1rem;">
+            <article style="width: 100%; display: block; background: transparent; box-shadow: none;">
+              <div>
+                <h3 style="color: var(--accent-color); font-size: 1.2rem;">Software Engineering Intern (Cloud & AI)</h3>
+                <p style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 0.5rem;">Pekoe.ai | Dec 2024 –
+                  Present</p>
+                <ul style="list-style-type: disc; margin-left: 20px; color: var(--text-main); font-size: 0.9rem;">
+                  <li style="margin-bottom: 0.5rem;">Designed automated MLOps pipeline on AWS (Step Functions, Lambda)
+                    using Terraform.</li>
+                  <li style="margin-bottom: 0.5rem;">Architected serverless system handling 12,000+ weekly images for
+                    model finetuning.</li>
+                  <li style="margin-bottom: 0.5rem;">Developed multi-agent solution with AWS Bedrock for automated
+                    report generation.</li>
+                  <li>Applied Transfer Learning to vision models for feature extraction on limited datasets.</li>
+                </ul>
+              </div>
+            </article>
+          </div>
+        </div>
+
         <div class="details-container">
           <h2 class="experience-sub-title">Tech Stack</h2>
           <div class="article-container">
@@ -384,117 +406,123 @@
     <h1 class="title">Projects</h1>
     <div class="experience-details-container">
       <div class="about-containers">
+
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./assets/explainable_voice.png" alt="Voice Analysis" class="project-img" />
+          </div>
+          <h2 class="experience-sub-title project-title">Explainable Voice Analysis</h2>
+          <p>Model-agnostic explainability framework for speech models with layer-wise analysis.</p>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn" onclick="location.href='#'">Github</button>
+            <button class="btn btn-color-2 project-btn btn-disabled">Live Demo</button>
+          </div>
+        </div>
+
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./assets/multimodal_adaptation.png" alt="Multimodal Adaptation" class="project-img" />
+          </div>
+          <h2 class="experience-sub-title project-title">Few-Shot Multimodal Adaptation</h2>
+          <p>Adapting Contrastive Captioners for low-resource visual recognition using LoRA.</p>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn" onclick="location.href='#'">Paper</button>
+          </div>
+        </div>
+
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./assets/agentic_ai.png" alt="Agentic AI" class="project-img" />
+          </div>
+          <h2 class="experience-sub-title project-title">Agentic AI Report Engine</h2>
+          <p>Serverless orchestrator using AWS Bedrock to dispatch analysis tasks to agents.</p>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn" onclick="location.href='#'">Github</button>
+          </div>
+        </div>
+
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./assets/sentiment_engine.png" alt="Sentiment Engine" class="project-img" />
+          </div>
+          <h2 class="experience-sub-title project-title">NLP Product Engine</h2>
+          <p>Full-stack NLP solution extracting pain points using BERT, LSTM and LLAMA 3.</p>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn"
+              onclick="location.href='https://github.com/luckylukezzz/Sentiment-Analysier-flaskapp'">Github</button>
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://analytica-ten.vercel.app/'">Live
+              Demo</button>
+          </div>
+        </div>
+
         <div class="details-container color-container">
           <div class="article-container">
             <img src="./assets/ecom.png" alt="Ecom platform" class="project-img" />
           </div>
           <h2 class="experience-sub-title project-title">Ecommerce platform</h2>
           <p>Database design and implementation for a single vendor e-commerce platform with a simple UI using Flask.
-            </p>
-          <div class="btn-container">
-            <button class="btn btn-color-2 project-btn"
-              onclick="location.href='https://github.com/chathura-de-silva/E-Commerce-Platform'">
-              Github
-            </button>
-            <button class="btn btn-color-2 project-btn btn-disabled">
-              Live Demo
-          </button>
-
-          </div>
-        </div>
-
-        <div class="details-container color-container">
-          <div class="article-container">
-            <img src="./assets/sentiment.png" alt="Sentiment Analyzer" class="project-img" />
-          </div>
-          <h2 class="experience-sub-title project-title">Sentiment Analyser</h2>
-          <p>
-            Sentimental analysis for amazon product reviews to give product improvement tips (Natural Language Processing)
-
           </p>
           <div class="btn-container">
             <button class="btn btn-color-2 project-btn"
-              onclick="location.href='https://github.com/luckylukezzz/Sentiment-Analysier-flaskapp'">
-              Github
-            </button>
-            <button class="btn btn-color-2 project-btn" onclick="location.href='https://analytica-ten.vercel.app/'">
-              Live Demo
-            </button>
+              onclick="location.href='https://github.com/chathura-de-silva/E-Commerce-Platform'">Github</button>
+            <button class="btn btn-color-2 project-btn btn-disabled">Live Demo</button>
           </div>
         </div>
-        
+
         <div class="details-container color-container">
           <div class="article-container">
-            <img src="./assets/microprocessor.png" alt="Dating app" class="project-img" />
+            <img src="./assets/microprocessor.png" alt="Microprocessor" class="project-img" />
           </div>
           <h2 class="experience-sub-title project-title">4 bit microprocessor</h2>
-
-          <p>Xilinx Vivado project for 4bit microprocessor capable of adding and subtacting. Designed in VHDL.
-          </p>
+          <p>Xilinx Vivado project for 4bit microprocessor capable of adding and subtacting. Designed in VHDL.</p>
           <div class="btn-container">
             <button class="btn btn-color-2 project-btn"
-              onclick="location.href='https://github.com/luckylukezzz/Microprocessor'">
-              Github
-            </button>
-            <button class="btn btn-color-2 project-btn btn-disabled">
-              Live Demo
-          </button>
+              onclick="location.href='https://github.com/luckylukezzz/Microprocessor'">Github</button>
+            <button class="btn btn-color-2 project-btn btn-disabled">Live Demo</button>
           </div>
         </div>
+
         <div class="details-container color-container">
           <div class="article-container">
-            <img src="./assets/voxii.png" alt="Dating app" class="project-img" />
+            <img src="./assets/voxii.png" alt="Voice Translator" class="project-img" />
           </div>
-          <h2 class="experience-sub-title project-title">Voice Translator and changer</h2>
-
-          <p>Python project integrates speech recognition, translation, and voice synthesis to change user into a character! 
-          </p>
+          <h2 class="experience-sub-title project-title">Voice Translator</h2>
+          <p>Python project integrates speech recognition, translation, and voice synthesis to change user into a
+            character!</p>
           <div class="btn-container">
             <button class="btn btn-color-2 project-btn"
-              onclick="location.href='https://github.com/luckylukezzz/Aya_Voxii'">
-              Github
-              </button>
-              <button class="btn btn-color-2 project-btn btn-disabled">
-                Live Demo
-            </button>
+              onclick="location.href='https://github.com/luckylukezzz/Aya_Voxii'">Github</button>
+            <button class="btn btn-color-2 project-btn btn-disabled">Live Demo</button>
+          </div>
         </div>
-        </div>
+
         <div class="details-container color-container">
           <div class="article-container">
-            <img src="./assets/kaggle.png" alt="Dating app" class="project-img" />
+            <img src="./assets/kaggle.png" alt="Habitability Prediction" class="project-img" />
           </div>
-          <h2 class="experience-sub-title project-title">Sustainable Habitability Score Prodiction</h2>
-
-          <p> data preprocess,Model selection,
-            Evaluation (MAE, MSE, R²,RMSE) 
-          </p>
+          <h2 class="experience-sub-title project-title">Habitability Score</h2>
+          <p>Data preprocess, Model selection, Evaluation (MAE, MSE, R², RMSE) for habitability prediction.</p>
           <div class="btn-container">
             <button class="btn btn-color-2 project-btn"
-              onclick="location.href='https://www.kaggle.com/code/patalee210407r/ml-olympiad?scriptVersionId=183362634'">
-              Notebook
-              </button>
-              <button class="btn btn-color-2 project-btn btn-disabled">
-                Live Demo
-            </button>
+              onclick="location.href='https://www.kaggle.com/code/patalee210407r/ml-olympiad?scriptVersionId=183362634'">Notebook</button>
+            <button class="btn btn-color-2 project-btn btn-disabled">Live Demo</button>
+          </div>
         </div>
-        
+
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./assets/dateapp.png" alt="Dating app" class="project-img" />
+          </div>
+          <h2 class="experience-sub-title project-title">Dating app</h2>
+          <p>Tinder like social media app using MERN stack</p>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn"
+              onclick="location.href='https://github.com/luckylukezzz/project-t'">Github</button>
+            <button class="btn btn-color-2 project-btn btn-disabled">Live Demo</button>
+          </div>
+        </div>
+
       </div>
-      <div class="details-container color-container">
-        <div class="article-container">
-          <img src="./assets/dateapp.png" alt="Dating app" class="project-img" />
-        </div>
-        <h2 class="experience-sub-title project-title">Dating app</h2>
-        <p>Tinder like social media app using MERN stack</p>
-        <div class="btn-container">
-          <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/luckylukezzz/project-t'">
-            Github
-          </button>
-          <button class="btn btn-color-2 project-btn btn-disabled">
-            Live Demo
-        </button>
-        </div>
-      </div>
-    </div>
     </div>
     <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'" />
   </section>

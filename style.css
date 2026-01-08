@@ -2,70 +2,98 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
 
+:root {
+  --bg-color: #0a0f1c;
+  /* Deep technical dark blue */
+  --card-bg: #111a2e;
+  --text-main: #e2e8f0;
+  --text-secondary: #94a3b8;
+  --accent-color: #38bdf8;
+  /* Cyan/Light Blue for AI feel */
+  --accent-hover: #0ea5e9;
+  --border-color: #1e293b;
+  --gradient-1: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+}
+
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
-
-
-
 body {
-  background-color: #ffffff;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 2000 1500'%3E%3Cdefs%3E%3Crect stroke='%23ffffff' stroke-width='.5' width='1' height='1' id='s'/%3E%3Cpattern id='a' width='3' height='3' patternUnits='userSpaceOnUse' patternTransform='scale(50) translate(-980 -735)'%3E%3Cuse fill='%23fcfcfc' href='%23s' y='2'/%3E%3Cuse fill='%23fcfcfc' href='%23s' x='1' y='2'/%3E%3Cuse fill='%23fafafa' href='%23s' x='2' y='2'/%3E%3Cuse fill='%23fafafa' href='%23s'/%3E%3Cuse fill='%23f7f7f7' href='%23s' x='2'/%3E%3Cuse fill='%23f7f7f7' href='%23s' x='1' y='1'/%3E%3C/pattern%3E%3Cpattern id='b' width='7' height='11' patternUnits='userSpaceOnUse' patternTransform='scale(50) translate(-980 -735)'%3E%3Cg fill='%23f5f5f5'%3E%3Cuse href='%23s'/%3E%3Cuse href='%23s' y='5' /%3E%3Cuse href='%23s' x='1' y='10'/%3E%3Cuse href='%23s' x='2' y='1'/%3E%3Cuse href='%23s' x='2' y='4'/%3E%3Cuse href='%23s' x='3' y='8'/%3E%3Cuse href='%23s' x='4' y='3'/%3E%3Cuse href='%23s' x='4' y='7'/%3E%3Cuse href='%23s' x='5' y='2'/%3E%3Cuse href='%23s' x='5' y='6'/%3E%3Cuse href='%23s' x='6' y='9'/%3E%3C/g%3E%3C/pattern%3E%3Cpattern id='h' width='5' height='13' patternUnits='userSpaceOnUse' patternTransform='scale(50) translate(-980 -735)'%3E%3Cg fill='%23f5f5f5'%3E%3Cuse href='%23s' y='5'/%3E%3Cuse href='%23s' y='8'/%3E%3Cuse href='%23s' x='1' y='1'/%3E%3Cuse href='%23s' x='1' y='9'/%3E%3Cuse href='%23s' x='1' y='12'/%3E%3Cuse href='%23s' x='2'/%3E%3Cuse href='%23s' x='2' y='4'/%3E%3Cuse href='%23s' x='3' y='2'/%3E%3Cuse href='%23s' x='3' y='6'/%3E%3Cuse href='%23s' x='3' y='11'/%3E%3Cuse href='%23s' x='4' y='3'/%3E%3Cuse href='%23s' x='4' y='7'/%3E%3Cuse href='%23s' x='4' y='10'/%3E%3C/g%3E%3C/pattern%3E%3Cpattern id='c' width='17' height='13' patternUnits='userSpaceOnUse' patternTransform='scale(50) translate(-980 -735)'%3E%3Cg fill='%23f2f2f2'%3E%3Cuse href='%23s' y='11'/%3E%3Cuse href='%23s' x='2' y='9'/%3E%3Cuse href='%23s' x='5' y='12'/%3E%3Cuse href='%23s' x='9' y='4'/%3E%3Cuse href='%23s' x='12' y='1'/%3E%3Cuse href='%23s' x='16' y='6'/%3E%3C/g%3E%3C/pattern%3E%3Cpattern id='d' width='19' height='17' patternUnits='userSpaceOnUse' patternTransform='scale(50) translate(-980 -735)'%3E%3Cg fill='%23ffffff'%3E%3Cuse href='%23s' y='9'/%3E%3Cuse href='%23s' x='16' y='5'/%3E%3Cuse href='%23s' x='14' y='2'/%3E%3Cuse href='%23s' x='11' y='11'/%3E%3Cuse href='%23s' x='6' y='14'/%3E%3C/g%3E%3Cg fill='%23efefef'%3E%3Cuse href='%23s' x='3' y='13'/%3E%3Cuse href='%23s' x='9' y='7'/%3E%3Cuse href='%23s' x='13' y='10'/%3E%3Cuse href='%23s' x='15' y='4'/%3E%3Cuse href='%23s' x='18' y='1'/%3E%3C/g%3E%3C/pattern%3E%3Cpattern id='e' width='47' height='53' patternUnits='userSpaceOnUse' patternTransform='scale(50) translate(-980 -735)'%3E%3Cg fill='%23F60'%3E%3Cuse href='%23s' x='2' y='5'/%3E%3Cuse href='%23s' x='16' y='38'/%3E%3Cuse href='%23s' x='46' y='42'/%3E%3Cuse href='%23s' x='29' y='20'/%3E%3C/g%3E%3C/pattern%3E%3Cpattern id='f' width='59' height='71' patternUnits='userSpaceOnUse' patternTransform='scale(50) translate(-980 -735)'%3E%3Cg fill='%23F60'%3E%3Cuse href='%23s' x='33' y='13'/%3E%3Cuse href='%23s' x='27' y='54'/%3E%3Cuse href='%23s' x='55' y='55'/%3E%3C/g%3E%3C/pattern%3E%3Cpattern id='g' width='139' height='97' patternUnits='userSpaceOnUse' patternTransform='scale(50) translate(-980 -735)'%3E%3Cg fill='%23F60'%3E%3Cuse href='%23s' x='11' y='8'/%3E%3Cuse href='%23s' x='51' y='13'/%3E%3Cuse href='%23s' x='17' y='73'/%3E%3Cuse href='%23s' x='99' y='57'/%3E%3C/g%3E%3C/pattern%3E%3C/defs%3E%3Crect fill='url(%23a)' width='100%25' height='100%25'/%3E%3Crect fill='url(%23b)' width='100%25' height='100%25'/%3E%3Crect fill='url(%23h)' width='100%25' height='100%25'/%3E%3Crect fill='url(%23c)' width='100%25' height='100%25'/%3E%3Crect fill='url(%23d)' width='100%25' height='100%25'/%3E%3Crect fill='url(%23e)' width='100%25' height='100%25'/%3E%3Crect fill='url(%23f)' width='100%25' height='100%25'/%3E%3Crect fill='url(%23g)' width='100%25' height='100%25'/%3E%3C/svg%3E");
-  background-attachment: fixed; /* Keeps the background fixed relative to the viewport */
-  background-position: center center; /* Adjusts the position of the background image */
-  background-size: cover; /* Ensures the image covers the entire viewport */
-  background-repeat: no-repeat; /* Prevents the image from repeating */
+  background-color: var(--bg-color);
+  color: var(--text-main);
   font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
 }
 
 html {
   scroll-behavior: smooth;
 }
+
 /* Styling for the desktop navigation */
 #desktop-nav {
-  background-color: #ff6600; /* Orange color */
-  padding: 5px 20px; /* Add some padding around the navbar */
-  display: flex; /* Use flexbox for layout */
-  justify-content: space-between; /* Space out the logo and navigation links */
-  align-items: center; /* Center items vertically */
+  background-color: transparent;
+  backdrop-filter: blur(10px);
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+  padding: 5px 20px;
+  /* Add some padding around the navbar */
+  display: flex;
+  /* Use flexbox for layout */
+  justify-content: space-between;
+  /* Space out the logo and navigation links */
+  align-items: center;
+  /* Center items vertically */
 }
 
 /* Styling for the logo */
 #desktop-nav .logo {
-  font-size: 1.7rem; /* Adjust font size as needed */
-  font-weight: bold; /* Make the logo bold */
-  color: #ffffff; /* White color for better contrast */
+  font-size: 1.7rem;
+  /* Adjust font size as needed */
+  font-weight: bold;
+  /* Make the logo bold */
+  color: var(--accent-color);
 }
 
 /* Styling for the navigation links */
 #desktop-nav .nav-links {
-  list-style: none; /* Remove default list styling */
-  margin: 0; /* Remove default margin */
+  list-style: none;
+  /* Remove default list styling */
+  margin: 0;
+  /* Remove default margin */
   padding: 0;
-  font-size: 0.9rem; /* Remove default padding */
-  display: flex; /* Use flexbox for layout */
+  font-size: 0.9rem;
+  /* Remove default padding */
+  display: flex;
+  /* Use flexbox for layout */
 }
 
 /* Styling for each navigation link */
 #desktop-nav .nav-links li {
-  margin-left: 20px; /* Space between the links */
+  margin-left: 20px;
+  /* Space between the links */
 }
 
 #desktop-nav .nav-links a {
-  text-decoration: none; /* Remove underline from links */
-  color: #ffffff; /* White color for the links */
-  font-size: 1rem; /* Adjust font size as needed */
-  transition: color 0.3s; /* Smooth transition for hover effect */
+  text-decoration: none;
+  /* Remove underline from links */
+  color: var(--text-main);
+  font-size: 1rem;
+  transition: all 0.3s;
 }
 
 #desktop-nav .nav-links a:hover {
-  color: #000000; /* Change color on hover (e.g., black) */
+  color: var(--accent-color);
+  text-decoration: underline;
+  text-underline-offset: 0.5rem;
+  text-decoration-color: var(--accent-hover);
 }
 
 p {
-  color: rgb(85, 85, 85);
+  color: var(--text-secondary);
 }
 
 /* TRANSITION */
@@ -74,12 +102,18 @@ a,
 .btn {
   transition: all 300ms ease;
 }
+
 .btn-disabled {
-  background-color: #cccccc; /* Grey background */
-  color: #666666; /* Grey text */
-  cursor: not-allowed; /* Shows a not-allowed cursor */
-  pointer-events: none; /* Disables clicking */
-  opacity: 0.6; /* Makes the button appear slightly transparent */
+  background-color: #cccccc;
+  /* Grey background */
+  color: #666666;
+  /* Grey text */
+  cursor: not-allowed;
+  /* Shows a not-allowed cursor */
+  pointer-events: none;
+  /* Disables clicking */
+  opacity: 0.6;
+  /* Makes the button appear slightly transparent */
 }
 
 
@@ -103,7 +137,7 @@ nav {
 }
 
 a {
-  color: black;
+  color: var(--text-main);
   text-decoration: none;
   text-decoration-color: white;
 }
@@ -122,25 +156,37 @@ a:hover {
 .article-container {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px; /* Space between articles */
-  justify-content: space-between; /* Distribute articles evenly */
+  gap: 20px;
+  /* Space between articles */
+  justify-content: space-between;
+  /* Distribute articles evenly */
 }
 
 .article-container article {
   display: flex;
-  align-items: center; /* Vertically center content */
-  gap: 10px; /* Space between the icon and text */
-  background-color: #f9f9f9; /* Example background color */
-  padding: 10px; /* Example padding */
-  border-radius: 8px; /* Example border radius */
-  width: calc(33.33% - 20px); /* Three articles per row with a gap */
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Example shadow */
+  align-items: center;
+  /* Vertically center content */
+  gap: 10px;
+  /* Space between the icon and text */
+  background-color: #f9f9f9;
+  /* Example background color */
+  padding: 10px;
+  /* Example padding */
+  border-radius: 8px;
+  /* Example border radius */
+  width: calc(33.33% - 20px);
+  /* Three articles per row with a gap */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  /* Example shadow */
 }
 
 .article-container article img.icon {
-  flex-shrink: 0; /* Prevent the icon from shrinking */
-  margin-right: 10px; /* Space between icon and text */
-  margin-left: 0; /* Align the icon to the left edge */
+  flex-shrink: 0;
+  /* Prevent the icon from shrinking */
+  margin-right: 10px;
+  /* Space between icon and text */
+  margin-left: 0;
+  /* Align the icon to the left edge */
 }
 
 .article-container article h3 {
@@ -175,7 +221,7 @@ a:hover {
 .hamburger-icon span {
   width: 100%;
   height: 2px;
-  background-color: black;
+  background-color: var(--text-main);
   transition: all 0.3 ease-in-out;
 }
 
@@ -183,7 +229,7 @@ a:hover {
   position: absolute;
   top: 100%;
   right: 0;
-  background-color: white;
+  background-color: var(--card-bg);
   width: fit-content;
   max-height: 0;
   overflow: hidden;
@@ -195,7 +241,7 @@ a:hover {
   padding: 10px;
   text-align: center;
   font-size: 1.5rem;
-  color: black;
+  color: var(--text-main);
   text-decoration: none;
   transition: all 0.3 ease-in-out;
 }
@@ -318,7 +364,8 @@ section {
 
 .btn-color-1,
 .btn-color-2 {
-  border: rgb(53, 53, 53) 0.1rem solid;
+  border: var(--accent-color) 0.1rem solid;
+  color: var(--text-main);
 }
 
 .btn-color-1:hover,
@@ -328,12 +375,13 @@ section {
 
 .btn-color-1,
 .btn-color-2:hover {
-  background: rgb(53, 53, 53);
-  color: white;
+  background: var(--accent-color);
+  color: #000;
 }
 
 .btn-color-1:hover {
-  background: rgb(0, 0, 0);
+  background: var(--accent-hover);
+  border-color: var(--accent-hover);
 }
 
 .btn-color-2 {
@@ -341,7 +389,7 @@ section {
 }
 
 .btn-color-2:hover {
-  border: rgb(255, 255, 255) 0.1rem solid;
+  border: var(--accent-hover) 0.1rem solid;
 }
 
 .btn-container {
@@ -383,10 +431,10 @@ section {
 .details-container {
   padding: 1.5rem;
   flex: 1;
-  background: white;
+  background: var(--card-bg);
   border-radius: 2rem;
-  border: rgb(53, 53, 53) 0.1rem solid;
-  border-color: rgb(163, 163, 163);
+  border: var(--border-color) 0.1rem solid;
+  border-color: var(--border-color);
   text-align: center;
 }
 
@@ -423,15 +471,20 @@ section {
   justify-content: center; 
   flex-direction: column; */
 }
+
 .details-container {
-  flex: 1 1 calc(50% - 10px); /* 50% width minus some spacing */
-  margin-bottom: 20px; /* Space between rows */
+  flex: 1 1 calc(50% - 10px);
+  /* 50% width minus some spacing */
+  margin-bottom: 20px;
+  /* Space between rows */
 }
+
 .about-containers {
   margin: 0 auto;
   max-width: 1200px;
   padding: 0 20px;
 }
+
 .article-container {
   display: flex;
   text-align: initial;
@@ -459,8 +512,8 @@ article .icon {
 }
 
 .color-container {
-  border-color: rgb(163, 163, 163);
-  background: rgb(250, 250, 250);
+  border-color: var(--border-color);
+  background: var(--card-bg);
 }
 
 .project-img {
@@ -471,12 +524,12 @@ article .icon {
 
 .project-title {
   margin: 1rem;
-  color: black;
+  color: var(--text-main);
 }
 
 .project-btn {
-  color: black;
-  border-color: rgb(163, 163, 163);
+  color: var(--text-main);
+  border-color: var(--border-color);
 }
 
 /* CONTACT */
