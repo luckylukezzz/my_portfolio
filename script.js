@@ -11,6 +11,15 @@
   }
   document.getElementById("featPrev").addEventListener("click", () => go(active - 1));
   document.getElementById("featNext").addEventListener("click", () => go(active + 1));
+
+  // Links elsewhere on the page (e.g. publication thumbnails) can open a specific slide
+  document.querySelectorAll("[data-slide]").forEach((a) =>
+    a.addEventListener("click", (e) => {
+      e.preventDefault();
+      go(Number(a.dataset.slide));
+      document.getElementById("interspeech").scrollIntoView({ behavior: "smooth" });
+    })
+  );
 })();
 
 // Photo lightbox: steps through the photos of the slide that was clicked
