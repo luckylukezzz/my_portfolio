@@ -151,7 +151,7 @@ h4 { font-size: 1.1rem; margin-bottom: 3px; }
 
 /* Contact */
 .big-link { color: var(--ink); font-size: 1.5rem; font-weight: 500; letter-spacing: -0.01em; }
-.refs { display: grid; grid-template-columns: 1fr 1fr; gap: 32px; font-size: 0.98rem; line-height: 1.6; }
+.refs { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 32px; font-size: 0.98rem; line-height: 1.6; }
 .refs p { margin: 0; }
 .footer { border-top: 1px solid var(--line); padding: 28px 0 36px; color: var(--muted); font-size: 0.88rem; }
 
@@ -187,7 +187,6 @@ h4 { font-size: 1.1rem; margin-bottom: 3px; }
   .pubs li { grid-template-columns: 44px minmax(0, 1fr); }
   .pub-photo { grid-column: 2; }
   .two-col { columns: 1; }
-  .refs { grid-template-columns: 1fr; }
   .lightbox { padding: 56px 12px; }
 }
 @media (prefers-reduced-motion: reduce) {
